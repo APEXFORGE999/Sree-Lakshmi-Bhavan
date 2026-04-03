@@ -211,8 +211,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuCategories.forEach((cat, index) => {
         const item = document.createElement('div');
         item.className = 'accordion-item';
-        // Make the first one active by default
-        if (index === 0) item.classList.add('active');
 
         let itemsHtml = cat.items.map(menuItem => `
             <div class="menu-item">
